@@ -1,7 +1,11 @@
 import "babel-polyfill";
 import './styles/styles.scss';
 import format from 'xml-formatter';
-import hljs from 'highlight.js';
+import hljs from 'highlight.js/lib/highlight';
+import json from 'highlight.js/lib/languages/json';
+import xml from 'highlight.js/lib/languages/xml';
+hljs.registerLanguage('json', json);
+hljs.registerLanguage('xml', xml);
 import 'highlight.js/styles/github.css'
 
 const responseContainer = document.getElementById('response');
