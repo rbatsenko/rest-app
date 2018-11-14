@@ -1,5 +1,7 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
+app.use(cors());
 const port = 3000;
 const xml = require('xml');
 
@@ -25,12 +27,16 @@ app.get('/advertisers/:format?', (req, res) => {
         {
           advertisers: [
             {
-              advertiser: [
-                { id: 1 },
-                { name: "MockAdvertiser" },
-                { external_id: 1 },
-                { impressions: 52721284 },
-                { clicks: 93149 }
+              advertiser: [ 
+                { 
+                  _attr: {
+                    id: 1,
+                    name: "MockAdvertiser",
+                    external_id: 1,
+                    impressions: 52721284,
+                    clicks: 93149
+                  }
+                }
               ]
             }
           ]
