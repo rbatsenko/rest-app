@@ -10,6 +10,7 @@
     "code-prettify": "^0.1.0",
     "highlight.js": "^9.13.1",
     "node-sass": "^4.10.0",
+    "normalize.css": "^8.0.1",
     "parcel-bundler": "^1.10.3",
     "parcel-plugin-clean-dist": "^0.0.6",
     "prismjs": "^1.15.0",
