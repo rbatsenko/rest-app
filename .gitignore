@@ -1,8 +1,3 @@
 # dependencies
 /rest-client/node_modules
 /rest-server/node_modules
-
-/brief.md.txt
-/interface.png
-/response.json
-/response.xml
